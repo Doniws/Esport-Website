@@ -590,7 +590,7 @@ $sec-red: #d12d10;
 					color: $ft-wht;
 				}
 				p {
-					font-family: 14px;
+					font-size: 16px;
 					font-family: sans-serif;
 				}
 				button {
@@ -1117,6 +1117,67 @@ footer {
 			text-align: center;
 		}
 	}
+}
+@media only screen and (max-width: 380px) { 
+	.background .content .content-text{
+		h1 , h1 > p {
+			font-size: 28px;
+		}
+		b {
+			font-size: 20px;
+		}
+	} 
+	.about-us .wrap-about-us {
+		h2 {
+			&:nth-child(1) {
+				margin-left: 20px;
+			}
+			&:nth-child(2) {
+				margin-left: 60px;
+			}
+		}
+		.content {
+			margin-top: 30px;
+			.wrap-content-img , .text{
+				padding-inline : 20px;
+			}
+		}
+		
+	}
+	.new-article {
+		.wrap-card-article {
+			padding: 0 30px 70px;
+		}
+		.title-bar {
+			padding: 30px;
+			h2 {
+				font-size: 40px;
+			}
+			a {
+				font-size: 16px;
+				width: 100%;
+				align-items: flex-end;
+			justify-content:flex-end;
+			}
+		}
+	}
+	.threed-model {
+		.content {
+			.article {
+				padding: 30px;
+				.text {
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	} 
+	.contact-home{
+		padding: 60px 30px;
+	}
+
+ 
 }
 
 .nav-responsive {

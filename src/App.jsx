@@ -1,21 +1,21 @@
 import "./all.scss";
-import Logo from "./assets/images/logo.png";
-import bg1 from "./assets/images/bg1.jpg";
-import bg2 from "./assets/images/bg2.jpg";
-import bg3 from "./assets/images/bg3.jpg";
-import bg4 from "./assets/images/bg4.jpg";
+import Logo from "/assets/images/logo.png";
+import bg1 from "/assets/images/bg1.jpg";
+import bg2 from "/assets/images/bg2.jpg";
+import bg3 from "/assets/images/bg3.jpg";
+import bg4 from "/assets/images/bg4.jpg";
 
-import cimg1 from "./assets/images/cimg1.jpg";
-import cimg2 from "./assets/images/cimg2.jpg";
-import cimg3 from "./assets/images/cimg3.jpg";
+import cimg1 from "/assets/images/cimg1.jpg";
+import cimg2 from "/assets/images/cimg2.jpg";
+import cimg3 from "/assets/images/cimg3.jpg";
 
-import artic1 from "./assets/images/artic1.jpg";
-import artic2 from "./assets/images/artic2.jpg";
-import artic3 from "./assets/images/artic3.jpg";
+import artic1 from "/assets/images/artic1.jpg";
+import artic2 from "/assets/images/artic2.jpg";
+import artic3 from "/assets/images/artic3.jpg";
 
-import x from "./assets/images/x.png";
-import ig from "./assets/images/ig.png";
-import fb from "./assets/images/fb.png";
+import x from "/assets/images/x.png";
+import ig from "/assets/images/ig.png";
+import fb from "/assets/images/fb.png";
 
 import { useEffect, useState } from "react";
 
@@ -111,7 +111,7 @@ function App() {
 						<div id="webapp_cover" onChange={handleNavResponsive}>
 							<div id="menu_button">
 								<input type="checkbox" id="menu_checkbox" />
-								<label for="menu_checkbox" id="menu_label">
+								<label htmlFor="menu_checkbox" id="menu_label">
 									<div id="menu_text_bar"></div>
 								</label>
 							</div>
@@ -192,10 +192,10 @@ function App() {
 									INDONESIA <p>GAMER</p>
 								</h1>
 								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Quaerat voluptatibus provident incidunt perspiciatis totam?
-									Omnis id laborum impedit, rem a ipsam, dicta quod atque,
-									incidunt nobis illo est iure! Perspiciatis.
+									Esports adalah panggung di mana semangat bersaing menyala dan
+									impian diwujudkan. Di Indonesia, kami merayakan keberanian,
+									dedikasi, dan semangat perjuangan gamer. Bersama, kita
+									mengejar kemenangan yang tak terbatas.
 								</p>
 								<div className="container-button">
 									<button>READ MORE</button>
@@ -221,7 +221,7 @@ function App() {
 									</span>
 									<p>
 										Bermain game seringkali menghadirkan ketegangan dan
-										tantangan. 
+										tantangan.
 									</p>
 									<button>READ MORE</button>
 								</div>
