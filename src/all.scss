@@ -1,0 +1,247 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	background-color: #000000;
+}
+
+@font-face {
+	font-family: "Perfect";
+	src: url(./assets/Perfect/pdark.ttf);
+}
+
+@font-face {
+	font-family: "Bebas";
+	src: url(./assets/bebas/Bebas-Regular.ttf);
+}
+
+main {
+	//home
+	width: 100%;
+}
+
+a,
+i,
+u,
+p,
+b {
+	color: #ffffff;
+	font-family: "Bebas";
+	font-weight: 400;
+}
+
+$ft-wht: #f1f1f1;
+$sec-red: #d12d10;
+
+.container-navbar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 65px;
+	background-color: transparent;
+	z-index: 20;
+	nav {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 50px;
+		.nav-logo {
+			width: 200px;
+			height: auto;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		ul {
+			display: flex;
+			list-style: none;
+			gap: 10px;
+			align-items: center;
+			li {
+				a {
+					text-decoration: none;
+					&:hover {
+						color: #c0c0c0;
+					}
+				}
+				button {
+					margin-left: 20px;
+					padding-inline: 30px;
+					padding-block: 10px;
+					border: none;
+					background-color: $sec-red;
+					color: $ft-wht;
+					font-size: 15px;
+					clip-path: polygon(100% 0, 100% 100%, 75% 100%, 10% 100%, 0 80%, 0 0);
+					font-family: "Bebas";
+					cursor: pointer;
+					&:hover {
+						background-color: $ft-wht;
+						color: $sec-red;
+					}
+				}
+			}
+		}
+	}
+}
+
+.background {
+	height: 100vh;
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	.bg-wrap {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -2;
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			z-index: 1;
+		}
+	}
+  .wrap-content-bg {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+		z-index: 2;
+    padding-inline: 20px;
+  }
+  .slide-pagination {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    b {
+      font-size: 18px;
+      color: #646464;
+      
+      padding-bottom: 4px;
+      padding-right: 20px;
+      font-family: 'Bebas';
+      cursor: pointer;
+      border:1px solid transparent; 
+      &:hover {
+      color: $ft-wht;
+    }
+    }
+   
+    b.active{
+      color: $ft-wht;
+border-bottom: 1px solid #646464;
+    }
+  }
+	.content {
+		height: 100%;
+		width: 90%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+    position: relative;
+		.content-text {
+			width: 55%;
+			display: flex;
+			align-items: flex-start;
+			gap: 16px;
+			flex-direction: column;
+			b {
+				font-size: 20px;
+			}
+			h1,
+			h1 > p {
+				font-family: "Perfect";
+				font-size: 40px;
+				color: $sec-red;
+				display: flex;
+				p {
+					color: $ft-wht;
+				}
+			}
+			p {
+				font-size: 12px;
+				font-family: sans-serif;
+				color: #ffffffc9;
+			}
+			.container-button {
+				display: flex;
+				gap: 12px;
+				button {
+					font-size: 14px;
+					padding: 14px 20px;
+					cursor: pointer;
+					&:nth-child(2) {
+						border: 1px solid #ff0000;
+						background: transparent;
+						color: $ft-wht;
+						font-weight: bold;
+					}
+					&:nth-child(1) {
+						border: 1px solid #ffffff;
+						background: $ft-wht;
+						color: $sec-red;
+						font-weight: bold;
+					}
+					&:hover {
+						border: 1px solid #ff0000;
+						background: $sec-red;
+						color: $ft-wht;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+.we-are {
+	position: relative;
+	width: 100%;
+	height: auto;
+	.wrap-card-we {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		.card-we {
+			flex: 1;
+			.wrap-img {
+				width: 100%;
+				height: 300px;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+          opacity: .8;
+				}
+			}
+		}
+	}
+}
